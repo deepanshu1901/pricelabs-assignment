@@ -1,0 +1,3 @@
+list:
+  css: div[data-stid="property-listing-results"]
+  type: HTML
