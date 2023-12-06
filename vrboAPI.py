@@ -1,6 +1,6 @@
 import requests
 
-url = 'https://www.vrbo.com/graphql'
+url = 'https://www.vrbo.com/graphql/'
 
 headers = {
     'authority': 'www.vrbo.com',
@@ -82,3 +82,6 @@ response = requests.post(url, json=payload, headers=headers)
 
 print(response.status_code)
 print(response.text)
+
+with open('response.txt', 'w') as f:
+    f.write(response.text)
